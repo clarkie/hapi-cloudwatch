@@ -12,7 +12,8 @@
     "eslint": "3.19.0",
     "eslint-config-airbnb-base": "11.2.0",
     "eslint-plugin-import": "2.2.0",
-    "hapi": "16.1.0"
+    "hapi": "16.1.0",
+    "sinon": "2.2.0"
   },
   "homepage": "https://github.com/clarkie/hapi-cloudwatch#readme",
   "keywords": [
@@ -29,7 +30,8 @@
   },
   "scripts": {
     "lint": "eslint *.js lib/*.js",
-    "test": "npm run lint && ava --verbose"
+    "test": "ava --verbose",
+    "ci": "npm run lint && npm run test"
   },
   "version": "0.0.1"
 }
