@@ -10,7 +10,7 @@ exports.register = (server, options, next) => {
 
   server.on('response', request => {
     const dimensions = metric.createDimensions(request);
-    responseMetric.put(request.app.end - request.app.start, 'responseTime', dimensions);
+    responseMetric.put(request.app.endTime - request.app.startTime, 'responseTime', dimensions);
   });
 
   return next();
