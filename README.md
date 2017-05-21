@@ -2,6 +2,12 @@
 
 A hapi plugin for sending request response time metrics to AWS CloudWatch.
 
+[![Build Status](https://travis-ci.org/clarkie/hapi-cloudwatch.png?branch=master)](https://travis-ci.org/clarkie/hapi-cloudwatch)
+[![npm version](https://badge.fury.io/js/hapi-cloudwatch.svg)](http://badge.fury.io/js/hapi-cloudwatch)
+[![Dependencies Status](https://david-dm.org/clarkie/hapi-cloudwatch.svg)](https://david-dm.org/clarkie/hapi-cloudwatch)
+[![DevDependencies Status](https://david-dm.org/clarkie/hapi-cloudwatch/dev-status.svg)](https://david-dm.org/clarkie/hapi-cloudwatch#info=devDependencies)
+[![Known Vulnerabilities](https://snyk.io/test/npm/hapi-cloudwatch/badge.svg)](https://snyk.io/test/npm/hapi-cloudwatch)
+
 ## Installation
 
 	npm install hapi-cloudwatch
@@ -17,9 +23,9 @@ var server = new Hapi.Server();
 var options = {};
 
 server.register({ register: require('hapi-cloudwatch'), options }, function(err) {
-	if (err) {
-		console.log('error', 'Failed loading plugin: hapi-cloudwatch');
-	}
+  if (err) {
+    console.log('error', 'Failed loading plugin: hapi-cloudwatch');
+  }
 });
 ```
 
@@ -55,11 +61,11 @@ A Hapi route configured like this:
 
 ```js
 server.route({
-	method: 'GET',
-	path: '/products/{id}',
-	handler: function(request, reply) {
-		reply('Success!');
-	}
+  method: 'GET',
+  path: '/products/{id}',
+  handler: function(request, reply) {
+    reply('Success!');
+  }
 });
 ```
 and run with `NODE_ENV=production npm start` will send a metric to AWS CloudWatch with the following dimensions:
