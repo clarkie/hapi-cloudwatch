@@ -1,32 +1,35 @@
 {
-  "name": "hapi-cloudwatch",
-  "version": "0.0.1",
+  "author": "clarkie",
+  "bugs": {
+    "url": "https://github.com/clarkie/hapi-cloudwatch/issues"
+  },
+  "dependencies": {
+    "cloudwatch-metrics": "^1.1.0"
+  },
   "description": "log requests to AWS cloudwatch",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "lab"
+  "devDependencies": {
+    "code": "^4.0.0",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb-base": "11.2.0",
+    "eslint-plugin-import": "2.2.0",
+    "lab": "^12.1.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/clarkie/hapi-cloudwatch.git"
-  },
+  "homepage": "https://github.com/clarkie/hapi-cloudwatch#readme",
   "keywords": [
     "hapi",
     "AWS",
     "cloudwatch",
     "logging"
   ],
-  "author": "clarkie",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/clarkie/hapi-cloudwatch/issues"
+  "name": "hapi-cloudwatch",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarkie/hapi-cloudwatch.git"
   },
-  "homepage": "https://github.com/clarkie/hapi-cloudwatch#readme",
-  "dependencies": {
-    "cloudwatch-metrics": "^1.1.0"
+  "scripts": {
+    "lint": "eslint *.js lib/*.js",
+    "test": "lab"
   },
-  "devDependencies": {
-    "code": "^4.0.0",
-    "lab": "^12.1.0"
-  }
+  "version": "0.0.1"
 }
