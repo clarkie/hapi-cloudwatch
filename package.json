@@ -4,7 +4,7 @@
     "url": "https://github.com/clarkie/hapi-cloudwatch/issues"
   },
   "dependencies": {
-    "cloudwatch-metrics": "^1.1.0"
+    "cloudwatch-metrics": "1.1.0"
   },
   "description": "log requests to AWS cloudwatch",
   "devDependencies": {

@@ -8,7 +8,7 @@ exports.register = (server, options, next) => {
   server.ext('onRequest', lifecycle.setStartTime);
   server.ext('onPreResponse', lifecycle.setEndTime);
 
-  server.on('response', (request) => {
+  server.on('response', request => {
     const dimensions = metric.createDimensions(request);
     responseMetric.put(request.app.end - request.app.start, 'responseTime', dimensions);
   });
