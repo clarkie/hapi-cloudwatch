@@ -29,7 +29,7 @@
   },
   "scripts": {
     "lint": "eslint *.js lib/*.js",
-    "test": "ava --verbose"
+    "test": "npm run lint && ava --verbose"
   },
   "version": "0.0.1"
 }
