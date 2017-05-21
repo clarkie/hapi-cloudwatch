@@ -4,7 +4,7 @@ A hapi plugin for sending request response time metrics to AWS CloudWatch.
 
 ## Installation
 
-	`npm install hapi-cloudwatch`
+	npm install hapi-cloudwatch
 
 ## Usage
 
