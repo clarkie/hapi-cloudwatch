@@ -9,14 +9,10 @@ test('plugin registered', async t => {
 
   server.route({ method: 'GET', path: '/', handler: (request, reply) => reply(request.app) });
 
-  await server
-    .register(plugin)
-    .then(() => server
-      .inject({ url: '/' })
-      .then(({ result }) => {
-        t.truthy(result.startTime);
-        t.truthy(result.endTime);
-      }));
+  await server.register(plugin);
+  const { result } = await server.inject({ url: '/' });
+  t.truthy(result.startTime);
+  t.truthy(result.endTime);
 });
 
 test('plugin registered with all options', async t => {
@@ -32,12 +28,8 @@ test('plugin registered with all options', async t => {
     metricsSentCallback: () => {},
   };
 
-  await server
-    .register({ register: plugin, options })
-    .then(() => server
-      .inject({ url: '/' })
-      .then(({ result }) => {
-        t.truthy(result.startTime);
-        t.truthy(result.endTime);
-      }));
+  await server.register({ register: plugin, options });
+  const { result } = await server.inject({ url: '/' });
+  t.truthy(result.startTime);
+  t.truthy(result.endTime);
 });
