@@ -34,7 +34,7 @@
     "lint": "eslint *.js lib/*.js",
     "test": "nyc ava --verbose",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "ci": "npm run lint && npm run test && npm run coverage"
+    "ci": "npm run lint && npm run test"
   },
   "version": "1.0.1"
 }
