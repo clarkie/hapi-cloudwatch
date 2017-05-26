@@ -3,6 +3,7 @@
 A hapi plugin for sending request response time metrics to AWS CloudWatch.
 
 [![Build Status](https://travis-ci.org/clarkie/hapi-cloudwatch.png?branch=master)](https://travis-ci.org/clarkie/hapi-cloudwatch)
+[![Coverage Status](https://coveralls.io/repos/github/clarkie/dynogels/badge.svg)](https://coveralls.io/github/clarkie/dynogels)
 [![npm version](https://badge.fury.io/js/hapi-cloudwatch.svg)](http://badge.fury.io/js/hapi-cloudwatch)
 [![Dependencies Status](https://david-dm.org/clarkie/hapi-cloudwatch.svg)](https://david-dm.org/clarkie/hapi-cloudwatch)
 [![DevDependencies Status](https://david-dm.org/clarkie/hapi-cloudwatch/dev-status.svg)](https://david-dm.org/clarkie/hapi-cloudwatch#info=devDependencies)
