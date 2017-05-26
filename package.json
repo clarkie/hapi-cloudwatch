@@ -11,9 +11,9 @@
     "ava": "0.19.1",
     "eslint": "3.19.0",
     "eslint-config-airbnb-base": "11.2.0",
-    "eslint-plugin-import": "2.2.0",
-    "hapi": "16.1.0",
-    "sinon": "2.2.0"
+    "eslint-plugin-import": "2.3.0",
+    "hapi": "16.1.1",
+    "sinon": "2.3.1"
   },
   "homepage": "https://github.com/clarkie/hapi-cloudwatch#readme",
   "keywords": [
